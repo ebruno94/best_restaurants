@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>@Model.GetName()</h1>
+      <h2>City: @Model.GetCity()</h2>
+      <h2>Rating: @Model.GetRating() Michelin Stars</h2>
+      <p>Cuisines</p>
+      <ul>
+        @foreach (var cuisine in Model.GetCuisines())
+        {
+          <li>@cuisine.GetName()</li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
+<a href="/"><button type="button" class="btn">View all Restaurants!</button></a>

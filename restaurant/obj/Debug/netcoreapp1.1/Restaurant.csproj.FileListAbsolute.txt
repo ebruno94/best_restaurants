@@ -1,0 +1,8 @@
+/Users/Guest/Desktop/restaurant.Solution/restaurant/bin/Debug/netcoreapp1.1/Restaurant.deps.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant/bin/Debug/netcoreapp1.1/Restaurant.runtimeconfig.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant/bin/Debug/netcoreapp1.1/Restaurant.runtimeconfig.dev.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant/obj/Debug/netcoreapp1.1/Restaurant.AssemblyInfo.cs
+/Users/Guest/Desktop/restaurant.Solution/restaurant/bin/Debug/netcoreapp1.1/Restaurant.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant/bin/Debug/netcoreapp1.1/Restaurant.pdb
+/Users/Guest/Desktop/restaurant.Solution/restaurant/obj/Debug/netcoreapp1.1/Restaurant.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant/obj/Debug/netcoreapp1.1/Restaurant.pdb

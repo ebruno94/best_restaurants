@@ -1,0 +1,32 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>CREATE A RESTAURANT</h1>
+<form action="/Restaurant/Create" method="post">
+  <div class="form-group">
+    <label for="restName">Restaurant Name: </label>
+    <input type="text" name="restName" id="restName">
+  </div>
+  <div class="form-group">
+    <label for="restCity">Restaurant City: </label>
+    <input type="text" name="restCity" id="restCity">
+  </div>
+  <div class="form-group">
+    <label for="rating"># of Michellin Stars:</label>
+    <select name="rating" id="rating">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="cuisines">Cuisine(s):</label>
+    @foreach (var cuisine in Model)
+    {
+      <input type="checkbox" name="cuisine" value="@cuisine.GetId()"> @cuisine.GetName()<br>
+    }
+  </div>
+  <button type="submit" name="button">Create Restaurant</button>
+</form>

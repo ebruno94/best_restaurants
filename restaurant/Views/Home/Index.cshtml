@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1> RESTAURANTS </h1>
+<ul>
+  @foreach (var restaurant in Model)
+  {
+  <a href="/Restaurant/Info/@restaurant.GetId()"><li> @restaurant.GetName() </li></a>
+  }
+</ul>
+<a href="/Restaurant/Form"><button type="button" name="button"> Create New Restaurant</button></a>
+<a href="/Restaurant/Clear"><button type="button" name="button"> Delete All Restaurants</button></a>
