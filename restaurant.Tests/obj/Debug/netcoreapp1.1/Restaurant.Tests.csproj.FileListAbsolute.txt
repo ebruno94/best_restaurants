@@ -1,0 +1,13 @@
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.Tests.deps.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.Tests.runtimeconfig.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/obj/Debug/netcoreapp1.1/Restaurant.Tests.AssemblyInfo.cs
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.Tests.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.Tests.pdb
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/bin/Debug/netcoreapp1.1/Restaurant.pdb
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/obj/Debug/netcoreapp1.1/Restaurant.Tests.dll
+/Users/Guest/Desktop/restaurant.Solution/restaurant.Tests/obj/Debug/netcoreapp1.1/Restaurant.Tests.pdb

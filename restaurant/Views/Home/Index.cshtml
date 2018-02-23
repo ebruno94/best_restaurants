@@ -2,12 +2,28 @@
   Layout = "_Layout";
 }
 
-<h1> RESTAURANTS </h1>
-<ul>
-  @foreach (var restaurant in Model)
-  {
-  <a href="/Restaurant/Info/@restaurant.GetId()"><li> @restaurant.GetName() </li></a>
-  }
-</ul>
-<a href="/Restaurant/Form"><button type="button" name="button"> Create New Restaurant</button></a>
-<a href="/Restaurant/Clear"><button type="button" name="button"> Delete All Restaurants</button></a>
+<div class="container" id="indexContainer">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>RESTAURANTS</h1>
+      <hr>
+      <ul>
+        @foreach (var restaurant in Model)
+        {
+        <a href="/Restaurant/Info/@restaurant.GetId()"><li>@restaurant.GetName()</li></a>
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <a href="/Restaurant/Form"><button type="button" class="btn"> Create New Restaurant</button></a>
+    </div>
+    <div class="col-md-6">
+      <a href="/Restaurant/Clear"><button type="button" class="btn"> Delete All Restaurants</button></a>
+    </div>
+  </div>
+</div>

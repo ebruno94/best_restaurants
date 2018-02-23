@@ -1,0 +1,102 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 0 25px black;
+    opacity: 0.8;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+body{
+    padding: 50px;
+    background-color: firebrick;
+}
+
+.container{
+    background-color: bisque;
+    border: 3px solid black;
+    margin: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px black;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#jumboContainer{
+    padding: 0px;
+}
+
+.jumbotron{
+    margin: 0px;
+    border: 5px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    background-color: #4d0000;
+}
+
+.jumbotron h1{
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+
+button.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4d0000;
+    color: white;
+    box-shadow: 0px 0px 20px black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button.btn:hover{
+    box-shadow: 0px 0px 5px black;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+#infoContainer h3, #infoContainer ul{
+    margin-left: 40%;
+}
+
+#indexContainer ul{
+    list-style-type: none;
+}
+
+#indexContainer li{
+    text-align: center;
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+hr{
+    border: 1px solid #4d0000;
+    opacity: 0.5;
+}
+
+.flex {
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+}
+
+.inline-block{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}

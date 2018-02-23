@@ -12,6 +12,7 @@ namespace restaurantProject.Models
         private int _id;
         private int _rating;
         private List<string> _cuisineIds = new List<string>();
+        private List<Review> _reviews = new List<Review>();
 
         public Restaurant(string name, string city, int rating)
         {
@@ -224,6 +225,37 @@ namespace restaurantProject.Models
             return myCuisines;
         }
 
+        public List<Review> GetReviews()
+        {
+            List<Review> myReviews = new List<Review>();
+
+            MySqlConnection conn = DB.Connection();
+            conn.Open();
+            MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
+            cmd.CommandText = @"SELECT * FROM reviews WHERE restaurant_id=@restaurant_id;";
+            MySqlParameter tempId = new MySqlParameter("@restaurant_id", _id);
+            cmd.Parameters.Add(tempId);
+            MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
+            while(rdr.Read())
+            {
+                int id = rdr.GetInt32(0);
+                int rating = rdr.GetInt32(1);
+                string description = rdr.GetString(2);
+                string date = rdr.GetString(3);
+                string reviewer = rdr.GetString(4);
+                int restaurant_id = rdr.GetInt32(5);
+                Review tempReview = new Review(rating, description, date, reviewer, restaurant_id);
+                tempReview.SetId(id);
+                myReviews.Add(tempReview);
+            }
+
+            conn.Close();
+            if (conn != null)
+            {
+                conn.Dispose();
+            }
+            return myReviews;
+        }
         public static void DeleteAll()
         {
             MySqlConnection conn = DB.Connection();
@@ -254,6 +286,19 @@ namespace restaurantProject.Models
             if (conn != null)
             {
                 conn.Dispose();
+            }
+        }
+
+        public override bool Equals(System.Object otherRestaurant)
+        {
+            if (!(otherRestaurant is Restaurant))
+            {
+                return false;
+            }
+            else
+            {
+                Restaurant newRestaurant = (Restaurant) otherRestaurant;
+                return (newRestaurant.GetName() == this.GetName());
             }
         }
     }
